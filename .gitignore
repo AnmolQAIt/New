@@ -1,0 +1,10 @@
+target
+test-output
+report
+.metadata
+.project
+.classpath
+.settings
+.idea
+.log
+.DS_Store

@@ -1,0 +1,8 @@
+#SORTEngine
+Dropbox: css: div[class = 'bin-container']>div
+Items: css: .sort-word-bank.text.ui-droppable>li
+DraggableItems: css: .sort-word-bank.text.ui-droppable>li:nth-child($)
+Sourceitems: css: .sort-word-bank.text.ui-droppable>li:nth-child($)
+DestinationValues: css: div[class = 'bin-container']>div:nth-child($)>div[class='bin-inner']
+CorrectItems: css: div[class = 'bin-container']>div:nth-child($)>div:nth-child(2)>div:nth-child(2) li
+CorrectItems1: css: div[class = 'bin-container']>div:nth-child($)>div:nth-child(2)>div:nth-child(2) li:nth-child(#) p

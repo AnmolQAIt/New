@@ -1,0 +1,26 @@
+#CommonPage
+#elementname: locatortype: locatorvalue
+lnk_lang_drpdwn: xpath: (.//*[@data-toggle='dropdown'])[2]/i
+lnk_lang: xpath: ((.//*[@data-toggle='dropdown'])[2]/following::*[@id='lang-selection']/descendant::a)[${lnk_lang}]
+lnk_abt: id: about_myelt
+lnk_hlp: xpath: (.//*[@class='hand myelt_help'])[2]
+dv_grid: id: gridlink
+dv_grid_cnt: xpath: (.//*[@id='courses_container']/div)[1]
+dv_list: id: listlink
+dv_list_cnt: xpath: .//*[@id='courses_container']/ul
+lnk_usr_drpdwn: xpath: (.//i[@class='fa fa-caret-down'])[1]
+lnk_annoc: id: announcementBtn
+hdr_annoc: xpath: .//h3[contains(text(),'Message')]
+tb_annoc: css: .announcement-table.table.table-striped.table-condensed.primary_table
+img_home: xpath: .//img[@alt='MyELT']
+img_all_btn: id: all-btn
+img_inst_btn: id: instructor-btn
+img_slf_btn: id: selfstudy-btn
+btn_act: xpath: //a[@class='hand btn btn-primary'][contains(text(),'Assignments') or contains(text(),'Self-Study Activities')]
+img_eml: xpath: (//i[@class='fa fa-envelope-o'])[1]
+txt_sub: xpath: //input[@name='subject']
+txt_msg: id: message
+btn_snd_eml: id: sendEmail-btn
+dv_msg: xpath: //div[@class='errorMessage alert alert-success'][contains(text(),'Mail sent successfully')]
+btn_cls_dlg: id: closeGlobalPopUp
+MyELTLogo: xpath: //img

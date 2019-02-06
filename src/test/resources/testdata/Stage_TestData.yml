@@ -1,0 +1,84 @@
+baseurl: https://s-myelt.ilrn-support.com
+passwd: password
+new_passwd: password
+logFilePath: log/reports
+email_account: myeltautomation@gmail.com
+tech_email_account: myelt.tech1@gmail.com 
+school_or_institution_name: qaitest 
+inst_seriesAndLevels:
+   name: Keynote (British English)
+   Levels: [Intermediate, Upper-Intermediate, Advanced, Proficient]
+old_student_enroll: Test_std1_rls4.11_stg 
+users:
+   instructor:
+       username: Test_Instructor_4.14_STG
+       passwd: password
+   Admin:
+      username: admin_qait
+      passwd: password
+   Student:
+      username: Test_Student_4.14_STG
+      passwd: password
+   Super_Admin:
+      username: QAIT_Superuser
+      passwd: NqGaLi
+Student:
+   FirstName: qai
+   MiddleName: mstud
+   LastName: test
+   school: QAI
+   country: India
+   desc_problem: Demo Test Problem
+Instructor:
+   FirstName: qaiInst
+   MiddleName: mInst
+   LastName: testInst
+   school: QAI
+   city: DELHI
+   state: DELHI
+   country: India
+   zipCode: 110044
+course_no: 2
+course_no1: 3
+course_no2: 4
+sec_ques: What elementary school did you go to?
+passwd_ret_sys: Welcome to the MyELT Password Retrieval System
+hdr_enrl_msg: Process Complete
+Email_Subject: Please use this Test Course Key
+street: A-8
+city: Noida
+state: UP
+Language:
+   Espanyol:
+      About MyELT: Acerca de MyELT
+      Help: Ayuda
+   Protugues:
+      About MyELT: Sobre MyELT
+      Help: Ajuda
+   Japanese:
+      
+# Following details are to send the emailable report to all the recepients after test execution
+email:
+  subject: Demo Email from Student to Instructor
+  send: no
+  recepients: 
+    recepient1: null
+
+#Following details are neccassary for capturing screenshots
+screenshot:
+  takeScreenshot: yes
+  dirpath: "src/test/screenshots/"  
+  ftpUpload:
+    uploadImage: no
+    url: localhost
+    userid: testaccount
+    password: testpassword
+
+#Reports type to be generated
+Reports:
+   Type1: Assignment Statistics
+   Type2: Scores, by Student (Details)
+
+#Sample text to be send to text area while attempting any activity
+Text: Sample Text
+super_product: true

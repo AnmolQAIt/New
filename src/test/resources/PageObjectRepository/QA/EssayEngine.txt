@@ -1,0 +1,11 @@
+#EssayEngine
+#elementname: locatortype: locatorvalue
+EssayTextArea:css:.single-question textarea
+EssayTextAreaMultiple:xpath:(//div[contains(@class,'question')]/textarea)[${headertext}]
+StudentAnswer:xpath:(//table//td[contains(@headers,'student_answer')])[1]
+Student_Answer_Review:xpath://table[@id='contentTable']//tbody/tr[${headertext}]/td[3]
+score_Review:xpath://table[@id='contentTable']//tbody/tr[${headertext}]/td[4]
+ResumeStateBtn: xpath: //a[contains(text(),'Resume')]
+AssignmentActivitName: xpath: //a[contains(text(),'Resume')]/ancestor::tr//td[1]
+TitleText: css : .title-bar .title-txt
+activityframe :id : #activity_container

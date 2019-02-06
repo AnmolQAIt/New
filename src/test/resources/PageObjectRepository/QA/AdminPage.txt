@@ -1,0 +1,66 @@
+#AdminPage
+#elementname: locatortype: locatorvalue
+Title: MyELT | Online English Language Learning
+inp_Username: xpath: .//*[@id='dynamicFieldLogin']/input
+inp_Password: xpath: .//*[@id='dynamicFieldPasswd']/input
+login_btn: xpath: .//*[@id='signin-btn']
+validate_sign_out: xpath: //a[contains(text(),'Sign Out')]
+student_tab: xpath: //span[contains(text(),'Students')]
+crt_student_btn: id: create-course-btn
+std_dlg_box: xpath: html/body/div[4]/div/div
+usr_type: id: userType
+usr_account: id: userName
+usr_f_name: id: firstName
+usr_m_name: id: middleInitial
+usr_l_name: id: lastName
+usr_passwd: id: password
+usr_cfn_passwd: id: password2
+usr_vf_ques: id: verificationQuestion
+usr_vf_ans: id: verificationAnswer
+usr_email: id: email
+usr_re_email: id: email2
+usr_add_btn: id: saveUser-btn
+usr_cfn_msg: xpath: .//*[@class='errorMessage alert alert-success']
+cls_dialog: css: div[class ='fancybox-skin']>i
+lnk_admn_tools: xpath: .//*[@class='dropdown'][2]
+frm_admn: id: adminIframe
+frm_usr_srch: name: top_left_frame
+frm_usr_vw: name: bottom_right_frame
+lnk_add_edit_del_usr: xpath: //a[contains(text(),'Add/Edit/Delete Users')]
+txt_usr_name: xpath: //input[@name='user_name']
+btn_clr: xpath: //input[@value='Clear']
+btn_aply_fltr: xpath: //input[@value='Apply filter']
+tbl_usr_data: xpath: .//*[@id='main_form']/table[2]/descendant::tr[2]/td[1]
+lnk_perm: xpath: .//*[@id='main_form']/table[2]/descendant::tr[3]/td/descendant::a[2][contains(text(),'perm')]
+lnk_book_name: xpath: //table[@id='feature_table']/descendant::tr[@class='user_header_row']/td/descendant::small[1][contains(text(),'${lnk_book_name}')]/following::span/small[contains(text(),'(#{lnk_book_name})')]
+rdo_book_id: xpath: //input[contains(@name,'${rdo_book_id}') and @value=1]
+label_book_name: xpath: //input[contains(@name,'${label_book_name}') and @value=1]/parent::td/parent::tr/td[@class='decription']
+btn_aply: xpath: //input[@name='commit_changes_button']
+lnk_add_stud: xpath: //a[contains(text(),'Add new user')]
+slct_usr_type: id: user_type
+txt_usr_name: id: user_name
+txt_usr_pwd: name: pass_word
+txt_usr_pwd_cfn: name: pass_word2
+txt_lst_name: name: last_name
+txt_fst_name: name: first_name
+slct_ver_ques: id: verificationQuestion
+txt_ver_ans: name: verification
+txt_email: id: e_mail
+txt_cfn_email: name: e_mail2
+btn_add_usr: name: add_user_pressed
+p_add_usr_msg: xpath: html/body/font
+cls_dialog1 : xpath: //i[@class='fa fa-times-circle']
+LegacyAdminTools : xpath: .//*[@id='navbar-menu']/ul[2]/li/ul/li/a
+drpDown_statusSelect: id: statusSelect
+lbl_status: xpath: .//*[contains(@ng-repeat,'instrRequestData')]/td[text()='${lnk_select}']/parent::tr/td[last()-1]
+lnk_select: xpath: .//*[contains(@ng-repeat,'instrRequestData')]/td[text()='${lnk_select}']/parent::tr/td[last()]
+dlg_lbl_role: xpath: .//*[@role='dialog']/descendant::td[text()='${dlg_lbl_role}']
+dlg_lbl_institution: xpath: .//*[@role='dialog']/descendant::td[text()='${dlg_lbl_institution}']
+btn_approval_email: css: [ui-sref*='InstrRequestsEmailModal']
+btn_template: css: [class='btn btn-default dropdown-toggle']
+lnk_accnt_apprval: xpath: .//*[@ng-click='emailDetails.changeEmailTemplate(template)'][contains(text(),'Account Approval')]
+txtArea_emailMsg: css: [ng-model='emailMsg']
+btn_sendEmail: css: [ng-click='emailDetails.sendEmail()']
+lbl_submissionSuccess: css: [ng-show='submissionSuccess']
+btn_details_approve: css: [ng-click='details.approve()']
+btn_close: css: [ng-click='details.close()']

@@ -1,0 +1,8 @@
+#MCSSEngine
+TotalQuestion: css: div[class ='content-holder']>div>div>ol
+Select1stRadionbutton: css: div[class ='content-holder']>div>div>ol[start='1']>li>div[class ='answers']>div:nth-child(1)>div:nth-child(2)
+QuestionText: css: div[class ='content-holder']>div>div>ol[start='$']>li>div p
+TotalAnsOption: css: div[class ='content-holder']>div>div>ol[start='$']>li>div[class ='answers']>div
+AnswersText: css: div[class ='content-holder']>div>div>ol[start='$']>li>div[class ='answers']>div:nth-child(#)
+CorrectAns: css: div[class ='content-holder']>div>div>ol[start='$']>li>div[class ='answers']>div:nth-child(#)>div:nth-child(1)
+CorrectRadioOption: css: div[class ='content-holder']>div>div>ol[start='$']>li>div[class ='answers']>div:nth-child(#)>div:nth-child(2)

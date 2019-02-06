@@ -1,0 +1,98 @@
+#StudentPage
+#elementname: locatortype: locatorvalue
+Title: MyELT | Online English Language Learning
+inp_Username: xpath: .//*[@id='dynamicFieldLogin']/input
+inp_Password: xpath: .//*[@id='dynamicFieldPasswd']/input
+login_btn: xpath: .//*[@id='signin-btn']
+validate_sign_out: xpath: //a[contains(text(),'Sign Out')]
+lnk_crt_acnt: id: createAccBtn
+rdo_stud: id: labelStudent
+btn_nxt: id: registerOptionSelect
+rdo_instld_study: id: label1
+rdo_slf_study: id: label2
+btn_cntn: id: studentStepOneContinue
+txt_crs_key: id: courseAccessCodeDisplay
+txt_cnt_key: id: contentAccessCodeDisplay1
+txt_cnt_key1: id: content-access-code
+txt_cnt_key2: id: content-access
+btn_ys_cntn: id: studentStepYesContinue
+txt_lgn_id: id: loginID
+txt_pwd: id: password
+txt_pwd2: id: password2
+txt_eml: id: login
+txt_r_eml: id: login2
+slct_ver_ques: id: passwordHelpQuestion
+txt_ver_ans: id: passwordHelpAnswer
+txt_f_name: id: firstName
+txt_l_name: id: lastName
+slct_cntry: id: country
+rdo_agree: id: labelAgree
+btn_sbt_dtls: id: submitAccountDetails
+p_sucs_msg: xpath: .//*[@id='registration-success']/p[1]
+p_cfn_msg: xpath: .//*[@id='registration-success']/p[2]
+btn_strt_crs: xpath: .//*[@id='registration-success']/p[3]/a
+hdr_msg: xpath: .//*[@id='newAnnouncements']/h4
+btn_cls_dlg: id: closeGlobalPopUp
+txt_slf_cnt_key: id: contentAccessCodeDisplay
+btn_no_cntn: id: studentStepNoContinue
+btn_ad_rsrc: xpath: .//*[@id='coursesHeader']/div[2]/a
+rdo_enrol_type: id: enroll-radio
+btn_rsrc_step: id: addResourceStepOne
+txt_rscr_crs_key: id: courseAccessCodeInput
+btn_sbt_crs_key: id: course-key-submit
+btn_sbt_crs_key1: id: content-key-access-code-submit
+btn_sbt_crs_key2: id: content-access-submit
+spn_err_cntKey_msg: xpath: .//*[@id='content-access-error']/span[2]
+spn_err_cntKey_msg1: xpath: .//*[@id='content-access-error']/span[1]
+asgn_crs_name: xpath: .//*[@id='courses_container']/descendant::a[contains(text(),'${asgn_crs_name}')]
+btn_asgn: xpath: .//*[@id='courses_container']/descendant::a[contains(text(),'Assignments')]
+asgn_name: xpath: .//*[@id='asg-table']/descendant::a[contains(text(),'${asgn_name}')]
+lnk_usr_drpdwn: xpath: (.//i[@class='fa fa-caret-down'])[1]
+lnk_edit_usr: id: changeAccountBtn
+txt_old_pwd: id: old-password
+txt_street: id: p.Street
+txt_city: id: p.City
+txt_state: id: p.State
+btn_save: xpath: .//*[contains(text(),'Save')]
+dv_updt_msg: xpath: .//*[@class='errorMessage alert alert-success']
+img_home: xpath: .//img[@alt='MyELT']
+txt_nw_pwd: id: p.Password
+txt_cf_nw_pwd: id: p.confirmPassword
+lnk_help: xpath: .//a[contains(text(),'Help')]
+txt_username: id: username
+txt_email: id: email
+txt_school: id: school
+txt_cntry: id: country-input
+txt_problem: id: problem
+btn_submit: xpath: .//*[@type='submit']
+btn_take_assgn: xpath: .//*[@id='asg-table']/descendant::a[text()='Take']
+spn_crs_cde: xpath: .//*[@id='add-resource']/descendant::span[contains(text(),'${spn_crs_cde}')]
+spn_crs_nme: xpath: .//*[@id='add-resource']/descendant::span[contains(text(),'${spn_crs_nme}')]
+btn_enrl: id: enroll-submit
+btn_enrl1: id: content-key-access-code-submit
+btn_enrl2: id: content-access-submit
+hdr_msg_enrl: xpath: .//*[@id='add-resource']/h3
+btn_go_crs_hm: xpath: .//a[@class='btn btn-lg btn-primary']
+NextActivity:xpath://a[@id='next-activity']
+td_grade: xpath: .//a[contains(text(),'${td_grade}')]/ancestor::tr/td[3]
+EssayTextArea:css:.question>textarea
+td_percentage:xpath: //td[contains(text(),'%')]
+td_completeActivityName:xpath: //td[contains(text(),'%')]/preceding-sibling::td[2] 
+btn_Launch: xpath: //a[contains(text(),'Launch')]
+bookName: xpath: //a[contains(text(),'Self-Study Activities')]//ancestor::div/p//span//a
+SelfStudyActivityBtn: xpath: //a[contains(text(),'Self-Study Activities')]
+AssignmentBtn: xpath: //a[contains(text(),'Assignments')]
+AssignmentName: xpath: //a[contains(text(),'Assignments')]//ancestor::div/p//span//a
+rdo_enrol_type1: xpath: //h5[contains(text(),'Enroll/Add Content')]//ancestor::div[@class='col-sm-4 radio-form-block']//div[@class='radio']//label
+MyELTLogo: xpath: //img
+rdo_enrol_type2: xpath: //h5[contains(text(),'Enroll/Add Content')]//ancestor::div[@class='row']//div[3]//div[@class='radio']/label
+lnk_slf_act: css: [class='hand btn btn-primary'][href*='activity/book/${lnk_slf_act}']
+lnk_act_1: css: li:nth-child(1) [class*='html5-activity']
+lbl_activityName_scr: xpath: .//span[contains(text(),'${lbl_activityName}')]/parent::a/parent::td/following-sibling::td[1]
+lbl_activityName_prcnt: xpath: .//span[contains(text(),'${lbl_activityName_prcnt}')]/parent::a/parent::td/following-sibling::td[2]
+lnk_activityName_prcnt: xpath: .//span[contains(text(),'${lnk_activityName_prcnt}')]/parent::a/parent::td/following-sibling::td[2]/a
+tb_rev_actvty: css: [href='#preview-activity']
+tb_rev_scrs: css: [href='#contextDetails']
+btn_shw_ans: css: [data-function='showAnswer']
+lbl_crt_ans: css: [class*='correct']
+lbl_incrt_ans: css: [class*='incorrect']

@@ -1,0 +1,84 @@
+baseurl: https://qa3-myelt.ilrn-support.com
+passwd: password
+new_passwd: password
+logFilePath: log/reports
+email_account: myeltautomation@gmail.com
+tech_email_account: myelt.tech1@gmail.com 
+school_or_institution_name: QAIT_TEST_INSTITUTE
+inst_seriesAndLevels:
+   name: Keynote (British English)
+   Levels: [Intermediate, Upper-Intermediate, Advanced, Proficient]
+old_student_enroll:  test_auto_std_qa3
+users:
+   instructor:
+       username: Test_Inst_Rls4.15_R1
+       passwd: password
+   Admin:
+      username: admin_qaitt@myelt.com
+      passwd: thomson
+   Student:
+      username: Test_Std_Rls4.15_R1
+      passwd: password
+   Super_Admin:
+      username: QA3TEST_super
+      passwd: 4testing7
+Student:
+   FirstName: qai
+   MiddleName: mstud
+   LastName: test
+   school: QAI
+   country: India
+   desc_problem: Demo Test Problem
+Instructor:
+   FirstName: qaiInst
+   MiddleName: mInst
+   LastName: testInst
+   school: QAI
+   city: DELHI
+   state: DELHI
+   country: India
+   zipCode: 110044
+course_no: 2
+course_no1: 3
+course_no2: 4
+sec_ques: What elementary school did you go to?
+passwd_ret_sys: Welcome to the MyELT Password Retrieval System
+hdr_enrl_msg: Process Complete
+Email_Subject: Please use this Test Course Key
+street: A-8
+city: Noida
+state: UP
+Language:
+   Espanyol:
+      About MyELT: Acerca de MyELT
+      Help: Ayuda
+   Protugues:
+      About MyELT: Sobre MyELT
+      Help: Ajuda
+   Japanese:
+      
+# Following details are to send the emailable report to all the recepients after test execution
+email:
+  subject: Demo Email from Student to Instructor
+  send: no
+  recepients: 
+    recepient1: null
+
+#Following details are neccassary for capturing screenshots
+screenshot:
+  takeScreenshot: yes
+  dirpath: "src/test/screenshots/"  
+  ftpUpload:
+    uploadImage: no
+    url: localhost
+    userid: testaccount
+    password: testpassword
+
+#Reports type to be generated
+Reports:
+   Type1: Assignment Statistics
+   Type2: Scores, by Student (Details)
+
+#Sample text to be send to text area while attempting any activity
+Text: Sample Text Entered via QA#_TestDATA
+super_product: true

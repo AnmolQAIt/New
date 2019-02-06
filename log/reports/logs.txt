@@ -1,0 +1,13 @@
+
+Feb 06,2019 09:11:33 AM,  Verified that Web Url https://qa3-myelt.ilrn-support.com is Successfully launched on Web Browser.
+
+Feb 06,2019 09:12:13 AM,  Verified that Admin admin_qaitt@myelt.com is able to login Successfully.
+
+Feb 06,2019 09:12:51 AM,  Verified that Instructor Test_Inst_Rls4.15_R1 is able to login Successfully.
+
+Feb 06,2019 09:13:53 AM,  Verified that Student Test_Std_Rls4.15_R1 is able to login Successfully.
+
+Feb 06,2019 11:18:36 AM,  Verified that Admin myeltautomation@gmail.com is able to login Successfully.
+
+Feb 06,2019 02:54:34 PM,  Verified that Admin myeltautomation@gmail.com is able to login Successfully.
+

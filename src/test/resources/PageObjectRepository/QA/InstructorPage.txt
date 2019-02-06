@@ -1,0 +1,168 @@
+#LoginPage
+#elementname: locatortype: locatorvalue
+Title: MyELT | Online English Language Learning
+inp_Username: xpath: .//*[@id='dynamicFieldLogin']/input
+inp_Password: xpath: .//*[@id='dynamicFieldPasswd']/input
+login_btn: xpath: .//*[@id='signin-btn']
+validate_sign_out: xpath: //a[contains(text(),'Sign Out')]
+lnk_course: xpath: .//*[@id='navbar-menu']/descendant::span[contains(text(),'Courses')]
+lnk_stud: xpath: .//*[@id='navbar-menu']/descendant::span[contains(text(),'Students')]
+lnk_assnt: xpath: //a[contains(text(),'Assignments')]
+btn_add_course: id: create-course
+btn_course_name: id: visibleCourseName
+btn_course_no: id: courseNumber
+cal_start_date: xpath: .//input[@id='startDate']/following-sibling::*[@id='dateCalander']
+cal_end_date: xpath: .//input[@id='endDate']/following-sibling::*[@id='dateCalander']
+btn_save_course: id: saveCourse-btn
+lbl_crs_key: id: courseKey
+btn_save_exit: id: saveCourseKeyInfo-btn
+btn_enrl_stud: id: enroll_student_btn
+txt_srch_stud_lgn: id: login
+slct_usr_type: id: userTypesSelect
+btn_srch: id: searchSubmit
+chck_usr: xpath: .//*[@id='results']/descendant::input[3]
+btn_enroll: id: enroll
+dtPckr_start_date: xpath: (//div[@class='datepicker'])[1]/descendant::td[@class='day active' and contains(text(),'${dtPckr_start_date}')]
+dtPckr_start_date2: xpath: //div[@class='datepicker']//div[@class='datepicker-days'][1]/descendant::td[@class='day active' and contains(text(),'24')]
+dtPckr_end_date: xpath: (//div[@class='datepicker'])[2]/descendant::td[text()=${dtPckr_end_date} and @class='day']
+dtPckr_next_date: xpath: (//div[@class='datepicker'])[2]/descendant::td[text()=${dtPckr_end_date} and contains(@class,'new')]
+td_crs_name: xpath: .//*[@id='instrCourseTable']/descendant::td/a[contains(text(),'${td_crs_name}')]
+dv_slct_crs: id: selected-course
+spn_crs: xpath: //span[contains(text(),'${spn_crs}')]
+tbl_unroled_stud: xpath: .//*[@id='results']/descendant::span[contains(@title,'${tbl_unroled_stud}')]
+tbl_eroled_stud: xpath: .//*[@id='enrolled']/descendant::span[contains(@title,'${tbl_eroled_stud}')]
+chck_alEnrol: id: enrolledSetAll
+chck_enrol_admn_student: xpath: .//span[contains(@title,'${chck_enrol_student}')]
+chck_enrol_student: xpath: .//span[contains(@title,'${chck_enrol_student}')]/ancestor::tr/descendant::input
+btn_unenroll: id: unenroll
+dv_crs_slct: classname: courseSelectorDiv
+dv_dflt_node: xpath: .//span[contains(text(),'Select a Course or Section')]
+btn_crt_assnt: xpath: .//*[@id='create-assignment-btn']
+icn_expnd: xpath: .//*[@id='tcElem']/descendant::img[@title='Expand all']
+icn_collspe: xpath: .//*[@id='tcElem']/descendant::img[@title='Collapse all']
+img_chck_unit: xpath: //img[contains(@style,'visibility: hidden;')]/following::img[1]
+chck_unit: xpath: (//img[contains(@style,'visibility: hidden;')]/following::img[1])[${chck_unit}]
+img_chk_unit: xpath: //div[@id='tcElem']/div/div/div/div/div/div/div/div/span[1]/img[2]
+chk_unit: xpath: (//div[@id='tcElem']/div/div/div/div/div/div/div/div/span[1]/img[2])[${chk_unit}]
+img_book_name: xpath: .//span[contains(text(),'${lbl_book_name}')]/preceding-sibling::span/descendant::img[@class=' lltree_node_control']
+btn_aasnt_cnt: id: continueButton
+error_message: css: span[class = 'errorText']:nth-child(1)
+inp_asgn_name: name: assignmentName
+btn_cntn: xpath: //div[@class='clearfix assign-save-btn']/input
+btn_save: xpath: .//*[@id='mainForm']/div[2]/p/input
+p_assgn_name: xpath: //div[@class='course-details']/descendant::p[1]
+hdr_assgn_name: xpath: .//*[@id='assignments-container']/descendant::h4
+chck_asgn_name: xpath: .//a[contains(text(),'${chck_asgn_name}')]/ancestor::tr/descendant::input
+btn_cpy: xpath: .//a[contains(text(),'Copy')]
+dv_cpy_msg: xpath: html/body/div[4][contains(text(),'${dv_cpy_msg}')]
+btn_pst: xpath: .//a[contains(text(),'Paste')]
+chck_rm_clpbrd_pst: id: removePasted
+td_cpy_msg: xpath: .//*[@id='pasteForm']/descendant::td[contains(text(),'Copy')]
+btn_rm_clpbrd_itm: id: removeSelections-btn
+btn_pst_clpbrd_itm: id: pasteSelections-btn
+btn_cut: xpath: .//a[contains(text(),'Cut')]
+btn_dlt: xpath: .//a[contains(text(),'Delete')]
+btn_cfn_dlt: id: deleteSelected
+btn_cncl_dlt: id: doNothing
+tbl_lnk_crs_name: xpath: .//*[@id='instrCourseTable']/descendant::a[contains(text(),'${tbl_lnk_crs_name}')]/ancestor::tr[1]/descendant::input
+dv_cpy_crs_msg: xpath: html/body/div[3][contains(text(),'${dv_cpy_crs_msg}')]
+btn_dlt_multi_crs: xpath: //a[contains(text(),'Multiple')]
+lnk_fgt_pwd: id: lostPasswordCapes
+txt_inp_lgnId: id: login
+btn_sbmt: id: forgot-password-btn
+p_scs_msg: id: emailSuccess
+btn_home: xpath: .//*[@id='lostPasswordSubmit']/descendant::a
+spn_msg: xpath: .//*[@class='errorText'][contains(text(),'Please choose one or more content sources.')]
+btn_ok: xpath: .//a[@class='btn btn-primary']
+lnk_eml_mbers: id: email-members
+lnk_all_studs: id: selectAll-btn
+txt_subjct: xpath: .//*[@name='subject']
+txt_crs_key_msg: id: message
+btn_snd_eml: xpath: .//span[contains(text(),'Send E-mail')]
+dv_alrt_msg: xpath: //div[@class='errorMessage alert alert-success']
+icn_cls_dlg: xpath: //i[@title='Close']
+lnk_crs_name: xpath: .//*[@id='instrCourseTable']/descendant::a[text()='${lnk_crs_name}']
+txt_grp_name: xpath: .//input[@name='groupName']
+btn_save_grp: xpath: .//*[@id='mainForm']/div[3]/p/input
+lnk_grd_bk: id: gradebook-drop
+td_grd: xpath: .//a[contains(text(),'${td_grd}')]
+drp_down_rprt: xpath: .//*[contains(text(),'Choose a report type')]/following::i[@class='fa fa-caret-down hand'][1]
+lnk_assign_rprt_type: xpath: .//*[@id='report-dropdown']/descendant::a[contains(text(),'${lnk_assign_stat_rprt_type}')]
+btn_crt_report: id: createReport
+sct_assign_type: id: assignment
+hdr_rprt: xpath: .//*[@id='reportOutputDIV']/descendant::h4[contains(text(),'${hdr_rprt}')]
+spn_assign_details: xpath: .//*[@id='reportOutputDIV']/descendant::span[contains(text(),'${spn_assign_details}')]
+td_stud_name: xpath: .//b[contains(text(),'${td_stud_name}')]
+lnk_rtrn_grdbok: id: return-gradebook-anc
+rdo_rprt_frmt: id: reportFormat4
+btn_sv_rprt: id: saveReport
+All_folders: xpath: //Span[contains(text(),'All Folders')]
+Add: xpath: //a[contains(text(),'Add')]
+CreateSubfolderDialog: xpath: //h4[contains(text(),'Create a Subfolder.')]
+folderText: xpath: //html/body/div[@class='modal input-modal']/div[@class='modal-dialog']/div[@class='modal-content']/div[@class='modal-body']/input
+plusSymbol: xpath: //Span[contains(text(),'All Folders')]//preceding-sibling::span/img
+QAIFolder: xpath: //Span[contains(text(),'QAI AutoTest Folder')]
+RenameBtn: xpath: //a[contains(text(),'Rename')]
+QAIFolder2: xpath: //Span[contains(text(),'QAI AutoTest Folder 2')]
+Deletebtn: xpath: //a[contains(text(),'Delete')]
+Deleteconfmdilog: xpath: //h4[contains(text(),'Delete Folder')]
+okbtn: xpath: //button[contains(text(),'Ok')]
+Renameinput: xpath: //html/body/div[@class='modal input-modal']/div[@class='modal-dialog']/div[@class='modal-content']/div[@class='modal-body']/input
+studentName: xpath: .//a[contains(@href,'viewStudentDetails')][contains(text(),'${studentName}')]
+GmailLink: xpath: .//a[contains(text(),'Gmail')]
+GmailId: xpath: //input[@id='Email']
+Passwd: xpath: //input[@id='Passwd']
+Next: xpath: //a[contains(text(),'Need')]//ancestor::div//input[@value='Next']
+signInBtn: xpath: //input[@id='signIn']
+StaySignedIn: xpath: //span[contains(text(),'Stay signed in')]
+MailUI: xpath: //div[contains(text(),'Primary')]//ancestor::div[6]//div[@class='UI']//div//div[@class='Cp']/div/table/tbody/tr/td[@id=':3d']/div/div/div[@class='y6']/span[1]
+MailUI2: xpath: .//div[@class='UI']
+ResetPasswordLink: xpath: .//a[contains(text(),'Reset Password')]
+SecurityAnswer: xpath: //label[contains(text(),'Answer to question')]//ancestor::div[1]//input[@id='verificationAnswer']
+Changedpswd: xpath: //label[contains(text(),'New password')]//ancestor::div[1]//input[@id='password']
+Confirmpswd: xpath: //label[contains(text(),'Confirm password')]//ancestor::div[1]//input[@id='password2']
+pswdrtsumbit: xpath: //a[contains(text(),'Submit')]
+okbtn2: xpath: //a[contains(text(),'Ok')]
+SortBar: xpath: //a[contains(text(),'Student')]//span/i
+lnk_create_accnt: id: createAccBtn
+rdo_inst: css: #radio-instructor
+btn_nxt: id: registerOptionSelect
+inp_email: id: email
+inp_email2: id: email2
+inp_firstName: id: firstName
+inp_lastName: id: lastName
+inp_city: id: city
+inp_state: id: state
+inp_zipCode: id: zipCode
+drpDown_country: id: country
+inp_schoolName: id: schoolName
+rdo_agreeToEulaTrue: id: agreeToEulaTrue
+btn_accept: id: instAccStep1
+chckBox_series: css: [data-book-title='${chckBox_series}']
+btn_series_accept: id: instAccStep2
+lbl_email_vald: css: .user_info a[href*='${lbl_email_vald}']
+lbl_institution: xpath: .//*[@class='user_info']/descendant::dd[contains(text(),'${lbl_institution}')]
+lbl_prduct_name: xpath: .//*[@class='product form-group']/div/label
+lbl_prduct_sbcat: xpath:  .//*[@class='product_subcategory ']/span
+btn_instAccStep3: id: instAccStep3
+lnk_tech_email: xpath: .//*[@class='lead-md']
+btn_instAccStep4: id: instAccStep4
+lbl_email_hdr: css: h4
+inp_subj: css: [name='subject']
+txt_Msg: css: #message
+btn_send_email: css: [class='btn btn-primary pull-right sendEmail-btn']
+lbl_succ_eml_msg: css: div.errorMessage
+lbl_email_from: css: div.primary_table_wrapper tbody tr:nth-child(1) td:nth-child(2) span
+lbl_email_to: css: [class='form-control required email']
+icn_close: css: [class='fa fa-times-circle']
+lnk_email: xpath: .//*[contains(text(),'${lnk_email}')]/parent::td/parent::tr/descendant::a[contains(@data-init-fn,'module.email.setIntroContent')] 
+chkbox_email: css: [class*='email-students-table'] tbody tr:nth-child(1)  [name='userIds']
+selct_book_dropDown: css: #selectBookFilter i
+opt_book_name: css: [data-bookabbr='${opt_book_name}']
+lnk_stu_name: xpath: .//a[contains(text(),'${lnk_stu_name}')]
+lnk_scr_name: xpath: .//td[contains(text(),'${lnk_scr_name}')]/following-sibling::td[1]/a
+btn_shw_ans: css: [data-function='showAnswer']
+tb_rev_actvty: css: [href='#preview-activity']
+tb_rev_scrs: css: [href='#contextDetails']
+td_itemScoreDisplayGradeByItem: css: .itemScoreDisplayGradeByItem
+takesAllowed: xpath: .//div[@class='col-sm-4']/select

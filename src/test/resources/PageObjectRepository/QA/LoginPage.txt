@@ -1,0 +1,12 @@
+#LoginPage
+#elementname: locatortype: locatorvalue
+Title: MyELT | Online English Language Learning
+inp_Username: xpath: //span[contains(text(),'Login')]//ancestor::div//span//input[@name='login']
+inp_Password: xpath: .//*[@id='dynamicFieldPasswd']/input
+login_btn: xpath: .//*[@id='signin-btn']
+validate_sign_out: xpath: //a[contains(text(),'Sign Out')]
+dv_close_session: xpath: .//div[@class='error-text alert-danger']
+ann_header: id: popup-container
+cls_ann: id: closeGlobalPopUp
+LoginInformationWrong: xpath: //span[contains(text(),'The information')]
+loginMultipleSessionError: css: div[class = 'account-in-use']>div[class = 'error-text alert-danger']

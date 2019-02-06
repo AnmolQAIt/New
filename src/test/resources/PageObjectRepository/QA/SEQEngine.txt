@@ -1,0 +1,3 @@
+#SEQEngine
+TotalSEQValues: css: div[class ='content']>ul>li
+SeqBoxes: css: div[class ='content']>ul>li:nth-child($)

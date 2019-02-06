@@ -1,0 +1,17 @@
+#FIBDDEngine
+Dropdown:css: div[class= 'fib-question']>div
+DropdownMultiple:xpath:(//div[@class='select']/select)[${headertext}]
+DropdownOption:xpath:(//div[@class='select']/select)[1]/option
+FirstDropdown:xpath:(//div[@class='select']/select)/option[1]
+DropdownInSentence:xpath:(//div[@class='fib-question'])[1]/span/div[@class='select']/select
+DropdownInSentence2:xpath:(//div[@class='fib-question'])[1]/div[@class='select']/select
+Number_Of_dropdowns:xpath://div[@class='fib-question']
+ShowAnswer:xpath://button(@class='show-answer-btn show-answer')
+PDFIcon:xpath://button(@class='pdf-btn')
+MultiSelect://div[@class='select'and multiple='multiple']
+SubmitRollOver:xpath:.//*[@title='Please complete all items!']
+IncorrectAnswer:xpath:.//select[@class='incorrect-text']
+CorrectAnswer:xpath://select[@class='correct-text']
+ActivityBody:xpath://div[@class='content-holder']
+ResumeStateBtn: xpath: //a[contains(text(),'Resume')]
+AssignmentActivitName: xpath: //a[contains(text(),'Resume')]/ancestor::tr//td[1]/span[3]

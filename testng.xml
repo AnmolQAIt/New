@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="MyELT Automation Suite" parallel="tests">
+	<listeners>
+		<listener class-name="com.qait.automation.report.ChangeNameOfEmailableReports" />
+	</listeners>
+	<test name="smoke-test-myelt" preserve-order="true">
+		<classes>
+			 <class name="com.qait.myelt.tests.LoginValidationTest"></class>
+	<!--     <class name="com.qait.myelt.tests.AdminTest"></class> <class name="com.qait.myelt.tests.InstructorTest"></class> 
+			 <class name="com.qait.myelt.tests.StudentTest"></class> <class name="com.qait.myelt.tests.EngineTest"></class> -->
+			 
+		</classes>
+	</test>
+</suite>
